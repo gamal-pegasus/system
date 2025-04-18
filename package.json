@@ -1,9 +1,12 @@
 {
+  "homepage": "https://gamal-pegasus.github.io/system",
   "name": "system",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -13,6 +16,7 @@
     "@fortawesome/fontawesome-free": "^6.7.2",
     "formik": "^2.4.6",
     "generate-react-cli": "^8.4.9",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.488.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
